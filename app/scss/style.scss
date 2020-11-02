@@ -153,14 +153,12 @@
       & + button {
          margin-left: 5px;
       }
-      &.mixitup-control-active{
+      &.mixitup-control-active {
          background-color: $red;
          color: #fff;
       }
    }
 }
-
-
 
 .product__item {
    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
@@ -195,10 +193,9 @@
       display: block;
       font-size: 14px;
       color: $green;
-      
    }
    &-price {
-      font-size: 28px;     
+      font-size: 28px;
       font-weight: 700;
       color: $bg;
    }
@@ -209,9 +206,10 @@
       min-height: 70px;
       padding: 10px 30px;
    }
-   &-author {       
-           display: flex;
-           align-items: center;
+   &-author {
+      display: flex;
+      align-items: center;
+      max-width: 245px;
       .avatar {
          display: inline-block;
          width: 30px;
@@ -220,12 +218,18 @@
          background-position: center;
          background-size: cover;
          background-repeat: no-repeat;
-         margin-right: 14px;         
+         margin-right: 14px;
       }
-       span {
-          font-size: 14px;
-          font-weight: 500;
-       }
+      span {
+         font-size: 14px;
+         font-weight: 500;
+      }
+   }
+   &-star {
+      font-size: 12px;
+      span {
+         color: $bg;
+      }
    }
 }
 
@@ -240,16 +244,126 @@
       padding: 20px 30px;
       cursor: pointer;
       outline: none;
-      &.mixitup-control-active{
+      &.mixitup-control-active {
          background-color: $red;
          color: #fff;
       }
    }
 }
-
-
-
-
 /*------------------------------
  ---------- END PRODUCTS ---------- 
+------------------------------*/
+
+/*------------------------------
+ ----------START PRODUCT SLIDER ---------- 
+------------------------------*/
+.product-slider {
+   padding: 110px 0px 120px;
+   .slick-dots {
+      margin-top: 50px;
+      text-align: center;
+      li {
+         display: inline-block;
+         &.slick-active {
+            button {
+               background-color: $green;
+            }
+         }
+         button {
+            background-color: #e8e8e8;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            border: none;
+            font-size: 0;
+            cursor: pointer;
+            outline: none;
+         }
+         + li {
+            padding-left: 7px;
+         }
+      }
+   }
+}
+/*------------------------------
+ ----------END PRODUCT SLIDER ---------- 
+------------------------------*/
+
+/*------------------------------
+ ----------START ADVANTAGERS ---------- 
+------------------------------*/
+.advantages {
+   background-color: $bg;
+   padding: 110px 0;
+}
+
+.advantages__title {
+   color: $white;
+}
+
+.advantages__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.advantages__item {
+   max-width: 370px;
+   text-align: center;
+   padding: 0px 15px;
+
+   &:hover {
+      .advantages__item-images {
+         background-color: $green;
+         transition: all 0.3s;
+      }
+      .advantages__item-title {
+         color: $green;
+         transition: all 0.3s;
+      }
+      .advantages__item-images {
+         g {
+            fill: #fff;
+         }
+      }
+   }
+   &-images {
+      width: 114px;
+      height: 114px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 30px;
+   }
+   &-title {
+      color: $white;
+      margin-bottom: 25px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+   }
+   &-text {
+      font-size: 15px;
+      line-height: 24px;
+   }
+}
+
+.iconsvg-1 svg {
+   width: 70px;
+}
+.iconsvg-2 {
+   svg {
+      width: 70px;
+   }
+}
+
+.iconsvg-3 {
+   svg {
+      width: 85px;
+   }
+}
+
+/*------------------------------
+ ----------END ADVANTAGERS ---------- 
 ------------------------------*/
